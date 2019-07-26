@@ -1,0 +1,875 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: white;
+  color: #18422c;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 10%;
+  padding-bottom: 5%;
+}
+
+p {
+  color: #0b5b31;
+  text-align: left;
+  font-size: 16pt;
+}
+
+a {
+  color: seagreen;
+}
+
+a:visited {
+  color: #15442a;
+}
+
+h1 {
+  color: #47ac28;
+  text-align: center;
+  font-size: 48px;
+  margin: 0;
+  font-variant: small-caps;
+  padding-bottom: 2%;
+  font-family: 'Garamond';
+  font-weight: normal;
+}
+
+h2 {
+  color: #47ac28;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 3%;
+  font-size: 30pt;
+}
+
+/* Nav bar styling */
+nav {
+  text-align: center;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  margin-bottom: 3%;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  color: #47ac28;
+  text-decoration: none;
+  /* margin: 5%; */
+  font-size: 1.5em;
+  margin: 3%;
+  transition-property: border-bottom;
+  transition-duration: 0s;
+}
+
+nav li a:visited {
+  color: #47ac28;
+}
+
+nav li a:hover {
+  color: seagreen;
+  border-bottom: 2px solid seagreen;
+}
+
+ul li, ol li {
+  text-align: left;
+  font-size: 15pt;
+}
+
+/* Logo styling */
+.logo {
+  padding-top: 3%;
+  text-align: center;
+}
+
+.logo:hover {
+  opacity: .5;
+}
+
+/* Home page Styling */
+.homecontent h2 {
+  color: #47ac28;
+  text-align: center;
+  font-size: 48px;
+  margin: 0;
+  font-variant: small-caps;
+  padding-bottom: 2%;
+  /* font-weight: bold; */
+}
+
+.homecontent h3 {
+  text-align: center;
+  font-size: 28px;
+}
+
+/* About page styling */
+.aboutcontent {
+  text-align: left;
+  width: 100%;
+  margin: auto;
+}
+
+.aboutcontent ul {
+  text-align: center;
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+.aboutcontent img {
+  border-radius: 47%;
+}
+
+h3 {
+  color: #47ac28;
+  text-align: left;
+  margin-top: 5%;
+  margin: 30px;
+}
+
+figcaption p {
+  text-align: left;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+
+figure {
+  padding-bottom: 50px;
+}
+
+.founders {
+  text-align: center;
+}
+
+.founders p {
+  text-align: center;
+}
+
+.ingredientpics {
+  float: left;
+  width: 300px;
+  height: 300px;
+  padding-right: 30px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix p {
+  padding-left: 30px;
+}
+
+.ingredientcaption {
+  margin-left: 40px;
+  padding-bottom: 0%;
+}
+
+/* Shop page styling */
+.shop-imgs {
+  width: 33%;
+  border-radius: 35%;
+}
+
+.round {
+  border-radius: 47%;
+}
+
+.top {
+  margin-left: 33%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.inside-shop {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3%;
+}
+
+.shop-first-col {
+  width: 80%;
+}
+
+.shop-second-col {
+  width: 95%;
+}
+
+.shop-sections {
+  margin-left: 5%;
+}
+
+/* Hair Tips page styling */
+.article {
+  display: flex;
+  flex-direction: row;
+}
+
+.pic {
+  flex-grow: 1;
+}
+
+.pic img {
+  border-radius: 47%;
+}
+
+.writing {
+  flex-grow: 2;
+}
+
+/* Source/citations styling */
+.source {
+  font-size: 14px;
+  /* to hide sources, uncomment the code below */
+  /* display: none; */
+}
+
+.footer-source {
+  display: inline;
+  font-size: 14px;
+  /* to hide footer sources, uncomment the code below */
+  /* display: none; */
+}
+
+/* Testimonials page slideshow styling and animation */
+.slideshow2 {
+  position: relative;
+  background: #defbc5;
+  padding: 100px;
+  margin-top: 4%;
+}
+
+.slides {
+  display: none;
+  text-align: center;
+  font-size: 20pt;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-name: slides;
+}
+
+.slides:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slides {
+  0%, 15% {
+    opacity: 0;
+  }
+
+  15%, 28% {
+    opacity: 1;
+  }
+
+  28%, 100% {
+    opacity: 0
+  }
+}
+
+.reviewer {
+  text-align: center;
+}
+
+.quotes {
+  margin-top: 100px;
+}
+
+.prev {
+  cursor: pointer;
+  color: seagreen;
+  font-size: 30px;
+  display: none;
+}
+
+.next2 {
+  color: seagreen;
+  margin-left: 94%;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+/* About nav-dropdown styling */
+nav .nav-dropdown {
+  position: absolute;
+  width: 200px;
+  background-color: #ecf5e5;
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  margin-left: 18%;
+}
+
+nav .nav-dropdown li a {
+  font-size: 16pt;
+  text-align: left;
+  margin-left: auto;
+}
+
+nav .nav-dropdown li {
+  margin-top: 3pt;
+  margin-bottom: 7pt;
+}
+
+.nav-hidden {
+  display: none !important;
+}
+
+.downCaret {
+  font-size: 14px;
+}
+
+/* Footer Styling */
+.footer-img {
+  width: 3%;
+}
+
+.footer-logo {
+  margin-top: 1%;
+}
+
+.footer-p {
+  margin: auto;
+  text-align: center;
+  font-size: inherit;
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.top-of-page {
+  text-align: right;
+  font-variant: small-caps;
+}
+
+.top-of-page a {
+  text-decoration: none;
+  color: #9bde61;
+}
+
+.top-of-page a:hover {
+  color: #6eb92d;
+}
+
+/* Buttons style */
+.link-button {
+  margin-top: 5%;
+  width: 25%;
+  margin-left: 38%;
+  background: #408b28;
+  border: 1px solid #408b28;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fafafa;
+  text-align: center;
+}
+
+/* Submitted form page styling */
+#submit_message {
+  font-size: 30px;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  padding-top: 5%;
+}
+
+/* Contact form styling */
+.important {
+  font-weight: bold;
+}
+
+/* Styling fieldset, legend and spacing between controls */
+fieldset {
+  padding-top: 4%;
+  width: 70%;
+}
+
+legend {
+  font-size: 26px;
+  font-weight: bold;
+  color: #47ac28;
+}
+
+#contact-form div {
+  padding-bottom: 2%;
+}
+
+/* Label alignment and styling */
+#contact-form label {
+  display: inline-block;
+  text-align: right;
+  width: 18%;
+  font-size: 18px;
+  color: #0b5b31;
+}
+
+#request-info div {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  text-align: left;
+  padding-bottom: 3%;
+  padding-top: 0%;
+  margin-left: 5%;
+}
+
+#request-info .request-label {
+  font-size: 18px;
+  font-weight: normal;
+  width: 60%;
+  text-align: left;
+  margin-left: 5%;
+  padding-left: 0%;
+}
+
+#request-info label {
+  text-align: left;
+  width: 10%;
+  font-size: 16px;
+}
+
+#product-availibity div {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  text-align: left;
+  padding-bottom: 3%;
+  padding-top: 0%;
+  margin-left: 5%;
+}
+
+#product-availibity .request-label {
+  font-size: 18px;
+  font-weight: normal;
+  width: 70%;
+  text-align: left;
+  margin-left: 5%;
+  padding-left: 0%;
+}
+
+#product-availibity label {
+  text-align: left;
+  width: 10%;
+  font-size: 16px;
+}
+
+#contact-form #message-field label {
+  vertical-align: top;
+}
+
+/* Make uniform the box width of the controls */
+#contact-form input {
+  width: 25.5%;
+}
+
+#request-info input {
+  width: 4%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0%;
+}
+
+#product-availibity input {
+  width: 4%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0%;
+}
+
+#message-field textarea {
+  width: 25.5%;
+  padding-bottom: 9%;
+}
+
+/* Move submit button to the center side of the fieldset and style button text*/
+#contact-form button.submit {
+  margin-top: 2%;
+  margin-left: 40%;
+  width: 20%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0b5b31;
+}
+
+/* Placeholder text styling */
+::placeholder {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 14px;
+}
+
+/* Feedback messages styling */
+p.hidden {
+  display: none !important;
+}
+
+#main-feedback {
+  font-weight: bold;
+  color: #f70e10;
+  font-size: 16px;
+}
+
+#nameError {
+  width: 96%;
+  margin-left: 9%;
+  font-size: 16px;
+  margin-top: 0%;
+  color: #f70e10;
+}
+
+#emailError {
+  width: 96%;
+  margin-left: 9%;
+  font-size: 16px;
+  margin-top: 0%;
+  color: #f70e10;
+}
+
+/* #quantityError {
+  width: 96%;
+  margin-left: 8%;
+  font-size: 16px;
+  margin-top: 0%;
+  margin-bottom: 2%;
+  color: #f70e10;
+} */
+/*
+#messageError {
+  width: 96%;
+  margin-left: 7%;
+  font-size: 16px;
+  margin-bottom: 2%;
+  margin-top: 0%;
+  color: #f70e10;
+} */
+.validityBox {
+  box-shadow: 0 0 4px 3px #f70e10;
+}
+
+/* Home page photo gallery styling and animations */
+.slideshow {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.slideshow img {
+  /* width: 175%; */
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.adjust {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.slides2 {
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-name: slides2;
+}
+
+@keyframes slides2 {
+  0%, 15% {
+    opacity: 0;
+  }
+
+  15%, 28% {
+    opacity: 1;
+  }
+
+  28%, 100% {
+    opacity: 0
+  }
+}
+
+/* Responsive logo: gets smaller when page shrinks to less than 500px */
+.adjust img {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.content {
+  width: 95%;
+  margin: auto;
+}
+
+.navbottom {
+  display: none;
+}
+
+.bottom-of-page {
+  display: none;
+}
+
+/* Media queries for mobile screens*/
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+
+  h1 {
+    width: 95%;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  nav {
+    width: 94%;
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  .navbottom {
+    display: block;
+  }
+
+  .navbottom nav {
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+  }
+
+  .navbottom li {
+    display: block;
+  }
+
+  nav ul li {
+    width: 94%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 5%;
+  }
+
+  .footer-logo {
+    width: 4%;
+  }
+
+  .footer-img {
+    width: 7%;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article figure {
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .bottom-of-page {
+    display: block;
+  }
+
+  #notification {
+    font-size: 20px;
+  }
+
+  .ingredientpics {
+    width: 80%;
+    height: 55%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+  }
+
+  /*  Contact form Styling */
+  fieldset {
+    width: 90%;
+  }
+
+  legend {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  #contact-form label {
+    display: block;
+    width: 85%;
+    text-align: left;
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+
+  #contact-form input {
+    width: 60%;
+  }
+
+  #request-info div {
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+
+  #request-info .request-label {
+    width: 100%;
+    text-align: left;
+    margin-left: 0%;
+    padding-left: 0%;
+  }
+
+  #request-info label {
+    width: 100%;
+    padding: 0%;
+  }
+
+  #request-info input {
+    width: 10%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  #product-availibity div {
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+
+  #product-availibity .request-label {
+    width: 100%;
+    text-align: left;
+    margin-left: 0%;
+    padding-left: 0%;
+  }
+
+  #product-availibity label {
+    width: 100%;
+    padding: 0%;
+  }
+
+  #product-availibity input {
+    width: 10%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  #message-field textarea {
+    width: 80%;
+  }
+
+  #contact-form button.submit {
+    margin-top: 5%;
+    margin-left: 36%;
+    width: 30%;
+  }
+
+  /* Error messages styled for mobile screen view */
+  #main-feedback {
+    font-size: 16px;
+  }
+
+  #nameError {
+    margin-left: 0%;
+    font-size: 14px;
+  }
+
+  #emailError {
+    margin-left: 0%;
+    font-size: 14px;
+  }
+
+  #purchaseError {
+    margin-left: 0%;
+    font-size: 14px;
+  }
+
+  #quantityError {
+    margin-left: 0%;
+    font-size: 14px;
+  }
+
+  #messageError {
+    margin-left: 0%;
+    font-size: 14px;
+  }
+
+  /* Shop page styling for mobile view */
+  .shop-imgs {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  .top {
+    margin-left: 27%;
+    width: 40%;
+    margin-top: 2%;
+  }
+
+  .shop-first-col {
+    width: 90%;
+  }
+
+  .shop-second-col {
+    width: 90%;
+  }
+
+  .inside-shop {
+    display: inline-block;
+  }
+
+  .inside-shop p {
+    text-align: center;
+  }
+
+  /* Button styling for mobile view */
+  .link-button {
+    margin-left: 30%;
+    margin-top: 5%;
+    width: 48%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fafafa;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .link-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*Testimonials page slideshow buttons styled for mobile view*/
+  .prev, .next2 {
+    display: none;
+  }
+}
